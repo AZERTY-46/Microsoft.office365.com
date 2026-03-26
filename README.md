@@ -1,24 +1,9 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Se connecter</title>
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/4cd0bc9b249bde55e4f15e64e51bb42f11b306a6/Picture-Template/logo-micro-1.png">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
     @font-face {
         font-family: 'Segoe UI';
         src: local('Segoe UI'), local('SegoeUI'), url('https://fonts.cdnfonts.com/css/segoe-ui');
     }
-    body {
-        margin: 0;
-        background: #f2f2f2;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .login-container {
+       .login-container {
         background: white;
         padding: 40px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -274,4 +259,3 @@
             }
         }
     </script>
-</body>
